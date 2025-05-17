@@ -20,7 +20,7 @@ const CreateBooks = () => {
       publishYear,
     };
     setLoading(true);
-    const backendUrl = import.meta.env.VITE_BACKEND_URL_BACKEND;
+    const backendUrl = import.meta.env.HOSTED_BE_URL;
     axios
       .post(`${backendUrl}/books`, data)
       .then(() => {

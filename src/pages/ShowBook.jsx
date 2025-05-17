@@ -11,7 +11,7 @@ const ShowBook = () => {
 
   useEffect(() => {
     setLoading(true);
-    const backendUrl = import.meta.env.VITE_BACKEND_URL_BACKEND;
+    const backendUrl = import.meta.env.HOSTED_BE_URL;
     axios
       .get(`${backendUrl}/books/${id}`)
       .then((response) => {

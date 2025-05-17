@@ -13,7 +13,7 @@ const DeleteBook = () => {
 
   const handleDeleteBook = () => {
     setLoading(true);
-    const backendUrl = import.meta.env.VITE_BACKEND_URL_BACKEND;
+    const backendUrl = import.meta.env.HOSTED_BE_URL;
     axios
       .delete(`${backendUrl}/books/${id}`)
       .then(() => {
